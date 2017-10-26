@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo application that shows how to enable Facebook login on vuejs frontend ",
   "main": "index.js",
   "dependencies": {
     "bootstrap-social": "^5.1.1",
