@@ -1,4 +1,5 @@
 # hiddenChallenge
+this witll maintain  the process of the Facebook authentication. While in our case we will use a client application written in vuejs and a backend REST API that is written in Node.js
 
 # app fonctionnalities 
 * Using Facebook profiles to register users
@@ -16,7 +17,7 @@
 * [MongoDB](https://www.mongodb.com/)
 * [JavaScript SDK] for communication with Facebook we will use the official 
 * [Webpack] and use hot reloading to see changes to our modules happen immediately
-* [Babel] take full advantage of ES6 for our Vue components, and to make that happen
+* [Babel] take full advantage of ES6 for our Vue components
 
 # How To Start Application?
 
