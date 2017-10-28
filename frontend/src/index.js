@@ -1,5 +1,5 @@
 // src/index.js
-
+/*The entry point for the app is at src/index.js. Here we import everything we need and set up routing.*/
 import Vue from 'vue'
 import App from './components/app.vue'
 import Login from './components/Login.vue'

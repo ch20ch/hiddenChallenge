@@ -19,7 +19,7 @@ module.exports = function () {
       type: String,
       required: true,
     },
-    photos :[{
+    photos : [{
       type: String
     }],
     facebookProvider: {

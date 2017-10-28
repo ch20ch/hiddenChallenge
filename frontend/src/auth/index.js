@@ -1,4 +1,4 @@
-/*For communication with Facebook and our backend server we will create that service  */
+/*it's a service For communication with Facebook and our backend server we will create that service  */
 
 //import the router refernece that we set in the index file 
   import {router} from '../index'
