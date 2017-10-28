@@ -20,7 +20,7 @@ module.exports = function () {
       required: true,
     },
     photos :[{
-
+      type: String
     }],
     facebookProvider: {
       type: {

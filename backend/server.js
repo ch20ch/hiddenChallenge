@@ -45,7 +45,7 @@ router.route('/health-check').get(function(req, res) {
 var createToken = function(auth) {
   return jwt.sign({
     id: auth.id
-  }, 'my-secret',//ust in test version in production :jsHMAC algorithms, or the PEM encoded private key for RSA and ECDSA as stated in the library documentation
+  }, 'my-secret',//this string used  in test version in production :jsHMAC algorithms, or the PEM encoded private key for RSA and ECDSA as stated in the library documentation
   {
     expiresIn: 60 * 120
   });
@@ -89,6 +89,16 @@ var authenticate = expressJwt({
 });
 
 var getCurrentUser = function(req, res, next) {
+  User.findById(req.auth.id, function(err, user) {
+    if (err) {
+      next(err);
+    } else {
+      req.user = user;
+      next();
+    }
+  });
+};
+var getCurrentUserPhotos = function(req, res, next) {
   User.findById(req.auth.id, function(err, user) {
     if (err) {
       next(err);
