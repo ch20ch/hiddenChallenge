@@ -1,3 +1,5 @@
+<!-- src/components/LogAppin.vue -->
+ <!-- is the dashboard vue that contain the user information -->
 <template>
 	<div class="navbar navbar-default navbar-fixed-top">
 	  <ul class="nav navbar-nav navbar-right">

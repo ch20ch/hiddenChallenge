@@ -1,4 +1,5 @@
  <!-- src/components/Login.vue -->
+ <!-- is the Login vue that contain the form  -->
  <template>
     <div class="login-page">
       <div class="panel-heading logo">
