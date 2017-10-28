@@ -22,10 +22,10 @@
 
       <h5>
         <i class="glyphicon glyphicon-tags" ></i> 
-        {{ currentUser.fullName }}
+        {{ currentUser.displayName }}
       </h5>
 
-      <a href="#" class="list-group-item" v-repeat="photo in currentUser.user_photos">
+      <a href="#" class="list-group-item" v-repeat="photo in currentUser.photos">
       	<div class="card" style="width: 20rem;">
     	   <img class="card-img-top"  v-attr="src: photo" alt="Card image">
       	  <div class="card-block">

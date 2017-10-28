@@ -22,7 +22,7 @@ passportConfig();
 var app = express();
 
 // enable cors
-//In order to enable teh communicate between  the backend and frontend, we will use the Node.js library cors
+//In order to enable the communicate between  the backend and frontend, we will use the Node.js library cors
 var corsOption = {
   origin: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -66,7 +66,6 @@ router.route('/auth/facebook')
     if (!req.user) {
       return res.send(401, 'User Not Authenticated');
     }
-
     // prepare token for API
     req.auth = {
       id: req.user.id
@@ -98,16 +97,7 @@ var getCurrentUser = function(req, res, next) {
     }
   });
 };
-var getCurrentUserPhotos = function(req, res, next) {
-  User.findById(req.auth.id, function(err, user) {
-    if (err) {
-      next(err);
-    } else {
-      req.user = user;
-      next();
-    }
-  });
-};
+
 
 var getOne = function (req, res) {
   var user = req.user.toObject();
